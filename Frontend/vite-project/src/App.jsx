@@ -5,6 +5,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Quiz from './components/Quiz';
 import CreateQuiz from './components/CreateQuiz';
+import Signup from './components/Signup';
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
         <Route path='/' element={<Dashboard/>}/>
         <Route path='/quiz' element={<Quiz/>}/>
         <Route path='/Create' element={<CreateQuiz/>}/>
+        <Route path='/signup' element={<Signup/>}/>
+        <Route path='/login' element={<Signup/>}/>
       </Routes>
     </BrowserRouter>
    
